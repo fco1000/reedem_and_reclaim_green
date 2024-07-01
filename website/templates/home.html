@@ -1,0 +1,218 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-fluid">
+  <div class="header">
+      <div class="col-12 text-center">
+        <img
+          src="{% static 'img/logo.png' %}"
+          alt="Reedem and reclaim green logo"
+          width="340"
+          class="mt-4 img-fluid"
+        />
+        <h1 style="" class="pt-3 title">
+          Reedem and Reclaim<span style="color: #07ad07"> Green</span>
+        </h1>
+        <div class="container col-12">
+          <img
+            src="{% static 'img/Layer 1 copy.png' %}"
+            alt="underline"
+            class="img-fluid"
+            width="900"
+          />
+        </div>
+      </div>
+  </div>
+  <div class="my-5" style="margin-top: 100px">
+    .
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="{% static 'img/logo.png' %}"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Reedem and Reclaim Green
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="{% url 'home' %}"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'objectives' %}">Objectives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contacts' %}">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="row m-5">
+    <div class="col-lg-6 col-sm-12">
+      <h3>Who we are</h3>
+      <p class="show-content">
+        We are Environmental Stewards founded in the belief that we are charged
+        with the responsibility to take care of the environment.
+        <span class="text-danger"
+          >(Genesis 2:15 : The Lord God took the man and put him in the Garden
+          of Eden to work it and take care of it).</span
+        >
+      </p>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <img
+        src="{% static 'img/logo.png' %}"
+        alt="Logo"
+        width="320"
+        height="290"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+  <hr />
+  <div class="row m-5">
+    <div class="col-lg-6 col-sm-12">
+      <img
+        src="{% static 'img/dry.png' %}"
+        alt="Logo"
+        width="480"
+        class="img-fluid"
+        style="border-radius: 20px"
+      />
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <h3>Our Vision</h3>
+      <p class="show-content">
+        To redeem and reclaim the barren lands in semi-arid, arid and deserts
+        into useful and arable lands that can sustain life.
+      </p>
+    </div>
+  </div>
+  <hr />
+  <div class="row m-5">
+    <div class="col-lg-6 col-sm-12">
+      <h3>Our Mission</h3>
+      <p class="show-content">
+        To promote healthy living, access to water, offer relief and manage
+        disasters and contribute to environmental conservation.
+      </p>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <img
+        src="{% static 'img/fresh.png' %}"
+        alt="Logo"
+        width="480"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+  <hr />
+  <div class="row m-5">
+    <div class="col-lg-6 col-sm-12">
+      <img
+        src="{% static 'img/objective.png' %}"
+        alt="Logo"
+        width="300"
+        class="img-fluid"
+      />
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <h3>Objectives</h3>
+      <p class="show-content">
+        In a world where barren lands spread and invasive species choke life,
+        Redeem and Reclaim Green stands as a beacon of hope. Discover our urgent
+        mission to reclaim the Earth and ensure survival.
+        <a href="{% url 'objectives' %}" style="text-decoration: none"
+          >Learn More!</a
+        >
+      </p>
+    </div>
+  </div>
+  <hr />
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-12">
+      <div>
+        <h3>Core Values</h3>
+        <img
+          src="{% static 'img/core_underline.png' %}"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="text-left p-5">
+    <ul class="show-content">
+      <li class="mb-4">
+        <span style="color: #4e923d; font-size: 25px"
+          >We are Environmental Stewards:</span
+        >
+        We believe that the world ecosystem needs to be healthy for existence.
+      </li>
+      <li class="mb-4">
+        <span style="color: #4e923d; font-size: 25px"
+          >We are all-time Good Samaritans:</span
+        >
+        We have compassion and empathy towards humans and other living beings by
+        ensuring they live healthy in their habitats.
+      </li>
+      <li class="mb-4">
+        <span style="color: #4e923d; font-size: 25px"
+          >We believe in teamwork:</span
+        >
+        We believe that there is power in unity. When together, we generate
+        viable ideas. We have open windows for consultations and assistance
+        meant to make the world a better place to live in.
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% block js %}
+<script>
+  var lastScrollTop = 0;
+  var navbar = document.querySelector(".navigation");
+  var header = document.querySelector(".header");
+
+  window.addEventListener("scroll", function () {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      navbar.classList.remove("show");
+    } else {
+      // Scrolling up
+      if (scrollTop > header.clientHeight) {
+        navbar.classList.add("sticky", "show");
+      } else {
+        navbar.classList.remove("sticky", "show");
+      }
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+  });
+</script>
+{% endblock js %} {% endblock content %}
