@@ -35,10 +35,14 @@
       body {
       background-image: url("{% static 'img/background.png' %}");
       }
+      .fade-out {
+            opacity: 0;
+            transition: opacity 10s ease-in-out;
+        }
     </style>
-  </head>
-  <body >
-    <div class="container content-base" style="margin-bottom: 50px;">
+  </head> 
+  <body class="{% if request.days_passed > 30 %}fade-out{% endif %}">
+    <div class="container content content-base" style="margin-bottom: 50px;">
       {% block content %}{% endblock content %}
     </div>
 
