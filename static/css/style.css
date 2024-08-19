@@ -1,53 +1,43 @@
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles */
+/* General Styles for Colors and Fonts (applies to all screen sizes) */
 body {
   font-family: Arial, sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
-/* Header and footer styles */
 header,
 footer {
   background-color: #4caf50;
   color: white;
   text-align: center;
+}
+
+/* Original Styles for Larger Screens */
+header,
+footer {
   padding: 1em 0;
 }
 
-/* Logo styles */
 .logo {
   max-height: 100px;
 }
 
-/* Image section styles */
 .img-section img {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
 
-/* Section title styles */
 .section-title {
   margin-top: 30px;
+  font-size: 1.5em;
 }
 
-/* Navigation wrapper styles */
 .navigate-wrapper {
   position: relative;
 }
 
-/* Navigation styles */
 .navigation {
   transition: all 0.3s ease-in-out;
   opacity: 1;
@@ -61,11 +51,7 @@ footer {
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition-delay: 0.5s ease-in-out;
-}
-
-.navigation.sticky.show {
-  opacity: 1;
+  padding: 15px 0;
 }
 
 h3 {
@@ -73,8 +59,9 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
 }
+
 .show-content {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 23px;
   letter-spacing: 5px;
 }
@@ -84,49 +71,71 @@ h3 {
   font-size: 55px;
 }
 
+.images {
+  width: 340px;
+}
+
+.icon-top-left {
+    position: absolute;
+    top: 30px;
+    left: 340px;
+    font-size: 24px;   /* Adjust the color */
+}
+
+/* Mobile-Specific Styles */
 @media (max-width: 768px) {
-  .header {
+  body {
+    margin: 10px;
+    padding: 10px;
+  }
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 20px;
+    height: auto;
+    padding: 15px !important;
     box-sizing: border-box;
-    margin-bottom: 40vh;
+    margin-bottom: 20vh !important;
   }
 
   .navigation.sticky {
-    padding: 10px 0;
+    padding: 8px 0 !important;
   }
 
-  .header h1 {
-    font-size: 22px;
+  header h1 {
+    font-size: 20px !important;
   }
 
-  .header p {
-    font-size: 14px;
+  header p {
+    font-size: 12px !important;
   }
 
   .center h3 {
-    font-size: 20px;
+    font-size: 18px !important;
   }
 
-   p {
-    font-size: 13px;
+  p {
+    font-size: 12px !important;
   }
 
   .text-left ul {
-    font-size: 14px;
+    font-size: 12px !important;
   }
 
   .content-base {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
+
   .title {
-    font-size: 40px;
+    font-size: 30px !important;
   }
+
   .show-content li {
-    font-size: 14px;
+    font-size: 12px !important;
+  }
+
+  footer {
+    padding: 10px 0 !important;
   }
 }
